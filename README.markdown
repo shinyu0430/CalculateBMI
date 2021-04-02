@@ -2,7 +2,7 @@
 
 標示文件：[https://hexschool.github.io/JavaScript_HomeWork/](https://hexschool.github.io/JavaScript_HomeWork/)
 <br>
-成品Demo：[https://shinyu0430.github.io/CalculateBMI/](https://eshinyu0430.github.io/CalculateBMI/)
+成品Demo：[https://shinyu0430.github.io/CalculateBMI/](https://shinyu0430.github.io/CalculateBMI/)
 
 基本功能需求：
 
