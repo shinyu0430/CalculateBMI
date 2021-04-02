@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="./scss/style.css">
+  <title>BMI計算</title>
+</head>
+<body>
+  <section class="calculate">
+    <div class="container">
+      <img src="https://imgur.com/fLQSmCD.png" alt="">
+      <div class="form">
+        <label for="height">身高 cm</label>
+        <input id="height" type="number" placeholder="請輸入身高" min=1 >
+        <span class="warn_height v-hidden">此欄位必填</span>
+        <label for="weight">體重 kg</label>
+        <input id="weight" type="number" placeholder="請輸入體重" min=1 >
+        <span class="warn_weight v-hidden"> 此欄位必填</span>
+        </div>
+      <button class="submit">看結果</button>
+      <div class="lastResult d-none">
+        <div class="lastResult_BMI">    
+          </div>
+        <div class="lastResult_condition">
+          </div>
+      </div>
+  </section>
+  <section class="record">
+    <div class="container">
+      <h1>BMI 紀錄</h1>
+      <i class="fas fa-trash-alt" ></i>
+      <ul class="record_list">
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <img src="https://imgur.com/L7O4LGs.png" alt="">
+  </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

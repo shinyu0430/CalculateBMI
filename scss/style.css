@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: SFNSDisplay;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.v-hidden {
+  visibility: hidden;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calculate {
+  background-color: #424242;
+}
+
+.calculate .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+}
+
+.calculate .form {
+  color: #FFD366;
+}
+
+.calculate .form label, .calculate .form input {
+  display: block;
+}
+
+.calculate .form label {
+  margin-bottom: 8px;
+}
+
+.calculate .form input {
+  padding: 8px 16px;
+  border: 2px solid #FFD366;
+  border-radius: 10px;
+  background-color: #424242;
+  color: white;
+}
+
+.calculate .form span {
+  font-size: 12px;
+  color: #cc9100;
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.calculate .submit {
+  background-color: #FFD366;
+  color: #424242;
+  width: 120px;
+  height: 120px;
+  border: none;
+  font-size: 24px;
+  border-radius: 100px;
+}
+
+.calculate .submit:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+          box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.calculate .submit:active {
+  background-color: #ffb600;
+}
+
+.calculate .lastResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculate .lastResult_BMI {
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: 3px solid;
+  font-size: 24px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.calculate .lastResult_BMI span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculate .lastResult_BMI small {
+  font-size: 14px;
+}
+
+.calculate .lastResult_BMI .fa-sync {
+  position: absolute;
+  color: #424242;
+  bottom: 10px;
+  right: 0;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.calculate .lastResult_BMI .fa-sync:hover {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.calculate .lastResult_condition {
+  margin-left: 15px;
+}
+
+.calculate .lastResult_condition span {
+  font-size: 32px;
+}
+
+.record {
+  background-color: #e5e5e5;
+}
+
+.record .container {
+  padding: 48px 0;
+  position: relative;
+}
+
+.record h1 {
+  text-align: center;
+  color: #424242;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+
+.record .fa-trash-alt {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: #FFD366;
+  background-color: #424242;
+  padding: 5px;
+}
+
+.record .fa-trash-alt:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.record ul {
+  margin: 0 auto;
+}
+
+.record li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
+  background-color: #FFFFFF;
+  border-left: 6px solid transparent;
+  margin-bottom: 16px;
+  color: #424242;
+}
+
+.record li h3 {
+  font-size: 20px;
+}
+
+.record li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.record li div span {
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+.record li .fa-minus-square:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer {
+  background-color: #FFD366;
+}
+
+footer img {
+  margin: 0 auto;
+  display: block;
+  padding: 18px 0;
+}
+/*# sourceMappingURL=style.css.map */
