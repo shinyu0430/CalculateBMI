@@ -137,7 +137,7 @@ function renderLastResult(result){
 }
 
 //清除當次測量畫面
-function clearLastResult(result){
+function clearLastResult(){
   height.readOnly = false;
   weight.readOnly = false;
   height.value='';
